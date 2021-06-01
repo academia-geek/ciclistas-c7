@@ -10,21 +10,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Administración de ciclistas</title>
 </head>
 
 <body>
-    <section class="container-fluid me-3 ms-3 mt-5">
+    <section class="container-fluid mt-5">
         <header>
             <article class="row">
                 <div class="col-md-12 col-lg-12 col-12">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-1">
+                                <div class="col-md-1 col-lg-1">
                                     <a class="navbar-brand" href="#"><img src="imagenes/bicicleta-logo.png"
                                             class="img-fluid" /></a>
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,7 +31,7 @@
                                         <span class="navbar-toggler-icon"></span>
                                     </button>
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-7 col-lg-8">
                                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                         <div class="navbar-nav">
                                             <a class="nav-link" aria-current="page" href="#">Inicio</a>
@@ -42,7 +40,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-lg-3">
                                     <form class="d-flex mt-2">
                                         <input class="form-control me-2" type="search" placeholder="Buscar"
                                             aria-label="Search">
@@ -133,8 +131,8 @@
                                     <form class="d-flex mt-2" id="frm-adicionar-ciclista">
                                         <input class="form-control me-2" type="search" placeholder="Buscar"
                                             id="txt-buscar-ciclistas" aria-label="Search">
-                                        <button class="btn btn-outline-primary" type="submit"
-                                            id="btn_adicionar_ciclista" data-bs-toggle="modal"
+                                        <button class="btn btn-outline-primary" type="button"
+                                            id="btn_adicionar_ciclista"  data-bs-toggle="modal"
                                             data-bs-target="#modalAdicionarCiclista"><i
                                                 class="bi bi-rainbow"></i></button>
                                         </button>
@@ -193,7 +191,7 @@
     <form id="frm-ciclista" class="needs-validation" novalidate>
 
         <div class="modal fade" id="modalAdicionarCiclista" tabindex="-1">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Adicionar Ciclista</h5>
@@ -274,5 +272,6 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
+<script src="js/main.js"></script>
 
 </html>
