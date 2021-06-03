@@ -145,8 +145,8 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Corredor</th>
-                                                    <th>Carrera 1</th>
-                                                    <th>Carrera 2</th>
+                                                    <th>Carrera 1 <button class="btn btn-link ml-2" id="ordenar-carrera-1">Ordenar</button></th>
+                                                    <th>Carrera 2 </th>
                                                     <th>Carrera 3</th>
                                                     <th>Carrera 4</th>
                                                     <th>Carrera 5</th>
@@ -205,7 +205,7 @@
                                     <div class="col-6">
                                         <label for="nombre_ciclista" class="form-label">Nombre *</label>
                                         <input type="text" class="form-control" name="nombre_ciclista"
-                                            id="nombre_ciclista" required maxlength="30">
+                                            id="nombre_ciclista" required maxlength="30" value="Luis">
                                         <div class="invalid-feedback">
                                             Error validando nombre
                                         </div>
@@ -221,7 +221,7 @@
                                     <div class="col-6">
                                         <label for="carrera_1_corredor" class="form-label">Carrera 1(en min)*</label>
                                         <input type="number" step="any" class="form-control" name="carrera_1_corredor"
-                                            id="carrera_1_corredor" required min="5" max="10">
+                                            id="carrera_1_corredor" required min="5" max="200" value="8">
                                         <div class="invalid-feedback">
                                             Error validando Carrera 1
                                         </div>
@@ -229,26 +229,26 @@
                                     <div class="col-6">
                                         <label for="carrera_2_corredor" class="form-label">Carrera 2(en min)*</label>
                                         <input type="number" step="any" class="form-control" name="carrera_2_corredor"
-                                            id="carrera_2_corredor" required>
+                                            id="carrera_2_corredor" required value="28">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="carrera_3_corredor" class="form-label">Carrera 3(en min)*</label>
                                         <input type="number" step="any" class="form-control" name="carrera_3_corredor"
-                                            id="carrera_3_corredor" required>
+                                            id="carrera_3_corredor" required value="50">
                                     </div>
                                     <div class="col-6">
                                         <label for="carrera_4_corredor" class="form-label">Carrera 4(en min)*</label>
                                         <input type="number" step="any" class="form-control" name="carrera_4_corredor"
-                                            id="carrera_4_corredor" required>
+                                            id="carrera_4_corredor" required value="70">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="carrera_5_corredor" class="form-label">Carrera 5(en min)*</label>
                                         <input type="number" step="any" class="form-control" name="carrera_5_corredor"
-                                            id="carrera_5_corredor" required>
+                                            id="carrera_5_corredor" required value="90">
                                     </div>
                                 </div>
                             </div>
@@ -263,6 +263,18 @@
         </div>
     </form>
 
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5" id="mensaje">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Datos de ciclista almacenado</strong>
+          <small>guardado</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Los datos del ciclista fueron almacenados exitosamente.
+        </div>
+      </div>
+    </div>
     <div id="demo"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -272,6 +284,6 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" type="module"></script>
 
 </html>
